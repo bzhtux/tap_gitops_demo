@@ -30,6 +30,8 @@ secrets:
       version: "v2"
       #@schema/desc "Vault enterprise namespace"
       namespace: ""
+      #@schema/desc "Vault ca cert"
+      caBundle: ""
       #@schema/title "Authentication configuration for Vault"
       auth:
         #@schema/desc "Kubernetes auth configuration (see https://www.vaultproject.io/docs/auth/kubernetes)"
