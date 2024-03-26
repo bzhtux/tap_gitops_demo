@@ -30,6 +30,8 @@ tap_install:
         path: "secret"
         #@schema/desc "Vault enterprise namespace"
         namespace: ""
+        #@schema/desc "Vault CA cert"
+        caBundle: ""
         #@schema/desc "Vault KV secret engine version"
         version: "v2"
         #@schema/title "Authentication configuration for Vault"
