@@ -2,7 +2,7 @@
 secrets:
   eso:
     vault:
-      server: 10.214.148.124
+      server: https://10.214.148.124
       namespace: ""
       auth:
         kubernetes:
