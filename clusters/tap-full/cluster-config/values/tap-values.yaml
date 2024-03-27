@@ -37,6 +37,7 @@ tap_install:
       kp_default_repository_secret: # Takes the value from the shared section above by default, but can be overridden by setting a different value.
         name: "registry-credentials"
         namespace: "tap-install"
+      exclude_dependencies: true
     
     local_source_proxy:
       # Takes the value from the project_path under the image_registry section of shared by default, but can be overridden by setting a different value.
