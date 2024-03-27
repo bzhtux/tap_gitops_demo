@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -o errexit -o nounset -o pipefail
-#set -o xtrace
+set -o xtrace
+set -x
 
 function usage() {
   cat << EOF
