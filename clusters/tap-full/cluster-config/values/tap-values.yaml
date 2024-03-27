@@ -5,7 +5,7 @@ tap_install:
     
     shared:
       ingress_domain: "tap.h2o-2-23830.h2o.vmware.com"
-      ingress_issuer: # Optional, can denote a cert-manager.io/v1/ClusterIssuer of your choice. Defaults to "tap-ingress-selfsigned".
+      ingress_issuer: "tap-ingress-selfsigned" # Optional, can denote a cert-manager.io/v1/ClusterIssuer of your choice. Defaults to "tap-ingress-selfsigned".
     
       image_registry:
         project_path: "harbor.h2o-2-23830.h2o.vmware.com/tap"
