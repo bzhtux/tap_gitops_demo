@@ -1,6 +1,6 @@
 tap_install:
   package_repository:
-    oci_repository: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages
+    oci_repository: harbor.h2o-2-23830.h2o.vmware.com/tap/tap-packages
   version:
-    package_repo_bundle_tag: "1.8.1"
+    package_repo_bundle_tag: "1.8.0"
     package_version: "1.8.0"
