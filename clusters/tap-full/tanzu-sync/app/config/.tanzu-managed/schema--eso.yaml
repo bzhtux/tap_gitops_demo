@@ -98,11 +98,3 @@ secrets:
         #@schema/type any=True
         #@schema/examples ("AWS Secrets Manager (default scheme)", { "key": "dev/tanzu-sync/install-registry-dockerconfig" } )
         dockerconfigjson: {}
-
-      #@schema/title "tap-install-dockerconfig Secret"
-      #@schema/desc "Mapping of Secret key-to-ESO remote references of sensitive data used to authenticate with the OCI registry hosting the TAP PackageRepository (i.e. the 'install-registry-dockerconfig' Secret)."
-      tap_install_dockerconfig:
-        #@schema/desc "ESO remote reference of Docker configuration JSON-formatted authentication for the OCI registry."
-        #@schema/type any=True
-        #@schema/examples ("AWS Secrets Manager (default scheme)", { "key": "dev/tanzu-sync/install-registry-dockerconfig" } )
-        dockerconfigjson: {}
