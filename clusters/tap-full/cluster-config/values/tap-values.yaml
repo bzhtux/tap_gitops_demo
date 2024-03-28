@@ -10,7 +10,7 @@ tap_install:
       image_registry:
         project_path: "harbor.h2o-2-23830.h2o.vmware.com/tap"
         secret:
-          name: "registry-credentials"
+          name: "install-registry-dockerconfig"
           namespace: "tap-install"
     
     #The above keys are minimum numbers of entries needed in tap-values.yaml to get a functioning TAP Full profile installation.
@@ -35,7 +35,7 @@ tap_install:
       # Takes the value from the shared section by default, but can be overridden by setting a different value.
       kp_default_repository: "harbor.h2o-2-23830.h2o.vmware.com/build/tbs"
       kp_default_repository_secret: # Takes the value from the shared section above by default, but can be overridden by setting a different value.
-        name: "registry-credentials"
+        name: "install-registry-dockerconfig"
         namespace: "tap-install"
       exclude_dependencies: true
     
@@ -44,7 +44,7 @@ tap_install:
       repository: ""
       push_secret:
         # When set to true, the secret mentioned in this section is automatically exported to Local Source Proxy's namespace.
-        name: "registry-credentials"
+        name: "tap-registry"
         namespace: "tap-install"
         # When set to true, the secret mentioned in this section is automatically exported to Local Source Proxy's namespace.
         create_export: true

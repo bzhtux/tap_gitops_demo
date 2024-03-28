@@ -21,3 +21,6 @@ secrets:
       install_registry_dockerconfig:
         dockerconfigjson:
           key: secret/dev/tap-full/tanzu-sync/install-registry-dockerconfig
+      tap_registry_dockerconfig:
+        dockerconfigjson:
+          key: secret/dev/tap-full/tanzu-sync/install-registry-dockerconfig

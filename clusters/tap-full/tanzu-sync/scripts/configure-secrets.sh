@@ -47,6 +47,9 @@ secrets:
       install_registry_dockerconfig:
         dockerconfigjson:
           key: secret/dev/${CLUSTER_NAME}/tanzu-sync/install-registry-dockerconfig
+      tap_install_dockerconfig:
+        dockerconfigjson:
+          key: secret/dev/${CLUSTER_NAME}/tanzu-sync/install-registry-dockerconfig
 EOF
 
 echo "wrote ESO configuration for Tanzu Sync to: ${ts_values_path}"
