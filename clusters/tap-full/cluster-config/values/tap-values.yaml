@@ -35,7 +35,7 @@ tap_install:
       # Takes the value from the shared section by default, but can be overridden by setting a different value.
       kp_default_repository: "harbor.h2o-2-23830.h2o.vmware.com/build/tbs"
       kp_default_repository_secret: # Takes the value from the shared section above by default, but can be overridden by setting a different value.
-        name: "registry-credentials"
+        name: "tap-registry"
         namespace: "tap-install"
       exclude_dependencies: true
     
