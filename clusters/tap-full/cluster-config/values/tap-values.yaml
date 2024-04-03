@@ -52,8 +52,11 @@ tap_install:
     tap_gui:
       metadataStoreAutoconfiguration: true # Creates a service account, the Kubernetes control plane token and the requisite app_config block to enable communications between Tanzu Developer Portal and SCST - Store.
       app_config:
-        auth:
-          allowGuestAccess: true  # This allows unauthenticated users to log in to your portal. If you want to deactivate it, make sure you configure an alternative auth provider.
+      #   auth:
+      #     providers:
+      #       github:
+      #         development:
+      #   integrations:          
         catalog:
           locations:
             - type: url
