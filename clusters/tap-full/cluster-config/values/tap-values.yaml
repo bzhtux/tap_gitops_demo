@@ -52,15 +52,24 @@ tap_install:
     tap_gui:
       metadataStoreAutoconfiguration: true # Creates a service account, the Kubernetes control plane token and the requisite app_config block to enable communications between Tanzu Developer Portal and SCST - Store.
       app_config:
-      #   auth:
-      #     providers:
-      #       github:
-      #         development:
-      #   integrations:          
+        auth:
+          loginPage:
+            github:
+              title: TAP Login with Github
+              message: Enter with your GitHub account
         catalog:
           locations:
             - type: url
               target: https://github.com/bzhtux/tap-catalog/blob/main/catalog-info.yaml
+        app:
+          baseUrl: https://tap-gui.{{ shared_ingress_domain }}
+        backend:
+          baseUrl: https://tap-gui.{{ shared_ingress_domain }}
+          cors:
+            origin: https://tap-gui.{{ shared_ingress_domain }}
+          reading:
+            allow:
+              - host: '*.{{ h2o_slot }}.h2o.vmware.com'
     
     metadata_store:
       ns_for_export_app_cert: "*" # Verify this namespace is available within your cluster before initiating the Tanzu Application Platform installation.
