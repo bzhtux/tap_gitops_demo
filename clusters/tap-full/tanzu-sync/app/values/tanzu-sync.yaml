@@ -1,7 +1,7 @@
 ---
 git:
   url: git@github.com:bzhtux/tap_gitops_demo.git
-  ref: origin/main
+  ref: feat/testing-and-scanning
   sub_path: clusters/tap-full/cluster-config
 tap_package_repository:
   oci_repository: harbor.h2o-2-23830.h2o.vmware.com/tap/tap-packages
