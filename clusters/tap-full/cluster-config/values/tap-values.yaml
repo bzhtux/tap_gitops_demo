@@ -25,6 +25,8 @@ tap_install:
       registry:
         server: "harbor.h2o-2-23830.h2o.vmware.com" # Takes the value from the shared section by default, but can be overridden by setting a different value.
         repository: "tap-apps/supply-chain" # Takes the value from the shared section by default, but can be overridden by setting a different value.
+      gitops:
+        ssh_secret: ""
     
     contour:
       envoy:
